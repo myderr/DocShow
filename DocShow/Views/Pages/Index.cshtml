@@ -1,0 +1,28 @@
+﻿@model DocShow.Page
+@{
+    Layout = null;
+}
+<html xmlns="http://www.w3.org/1999/xhtml" style="font-size:16px">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>@Model.Title</title>
+    <link href="~/css/message-7cdc817e188747c4.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container d-flex flex-column" style="min-height:100vh">
+        <div class="jumbotron px-0 flex-grow-1">
+            <h4>@Model.Title</h4>
+            <p class="mb-0 d-flex flex-wrap align-items-center">
+                <span class="text-muted mr-2 text-wrap"><a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=RRZCH42YKHYSjD94-zGH_IgsulzvHffE&jump_from=webapi">消息通知群</a></span>
+
+                <span class="text-muted text-nowrap">@Model.SendTime</span>
+            </p>
+            <hr class="my-3">
+            <div class="container-fluid px-0 list-unstyled" style="white-space: pre-line;">@Model.Content</div>
+        </div>
+    </div>
+
+</body>
+</html>
